@@ -15,10 +15,22 @@
 <h2>Ejercicio 2</h2>
 
 <div class="main main2">
+
     <div>
-        <?php require 'functions.php';
-        showName("Jaume Sánchez Torres", "Desarrollo de aplicaciones multiplataforma"); 
-        printAddressAndSubjects("Plaza Inmaculada 5 8A")?>
+        <p>// 2. Escribe un script PHP para dividir la siguiente cadea:
+// Cadena de entrada: '082307'
+// Salida esperada : 08:23:07
+        </p>
+    </div>
+    <div>
+        <?php 
+
+            $cadenaEntrada = "082307";
+            echo substr($cadenaEntrada, 0, 2)
+             . ":" . substr($cadenaEntrada, 2, 2) .
+              ":" . substr($cadenaEntrada, 4, 2);          
+
+        ?>
     </div>
 
     <div class="innerDiv">

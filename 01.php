@@ -17,8 +17,25 @@
 
 <div class="main">
     <div>
-        <?php require 'functions.php';
-         showName("Jaume Sánchez Torres", "Desarrollo de aplicaciones multiplataforma"); 
+    <p></p>// 1. Escribe un script PHP para:
+// a) transforma un cadena con todas sus letras en mayúsculas.
+// b) transforma un cadena con todas sus letras en minúsuclas.
+// c) primera letra de la cadena en mayúsculas.
+// d) primera letra de cada palabra de mi cadena en mayúsculas.
+// La cadena a transformar es: "En un lugar de la mancha de cuyo nombre"
+    </div>
+
+    <div>
+        <?php 
+        $cadena = "en un lugar de la mancha de cuyo nombre";
+        echo strtoupper($cadena);
+        echo "<br>";
+        echo strtolower($cadena);
+        echo "<br>";
+        echo ucfirst($cadena);
+        echo"<br>";
+        echo ucwords($cadena);
+
          ?>
     </div>
 

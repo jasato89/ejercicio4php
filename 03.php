@@ -14,10 +14,28 @@
 <h2>Ejercicio 3</h2>
 
 <div class="main main2">
+
+    <div>
+        <p>
+        // 3. Escribe un script PHP que compruebe si la cadena indicada contiene la palabra "cuyo"
+// cadena : 'En un lugar de la mancha de cuyo nombre.'
+// palabra a buscar: "cuyo".
+        </p>
+    </div>
+
     <div>
 
-        <?php require 'functions.php';
-         horario(); 
+        <?php 
+
+        $cadena = "En un lugar de la mancha cuyo";
+        $valor = "cuyo";
+        if (strpos($cadena, $valor)) {
+            echo "'$valor' se encuentra en la cadena '$cadena'"; 
+        } else {
+            echo "'$valor' no se encuentra en la cadena '$cadena'"; 
+
+        }
+
          ?>
     </div>
 
