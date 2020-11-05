@@ -12,20 +12,34 @@
 
 
 <h1>Soluciones de los ejercicios</h1>
-<h2>Ejercicio 4</h2>
+<h2>Ejercicio 15</h2>
 
 <div class="main">
     <div>
-        <p>
-        // 4. Escribe un script PHP para extraer el nombre del fichero de la siguiente url:
-// cadena : 'www.example.com/public_html/index.php'
-// Valor esperado(fichero) : 'index.php'
-        </p>
+ 
+        <p>15. Escribe un script PHP que elimine todos los
+             ceros a la izquierda de una cadena:</p>
+
     </div>
     <div>
         <?php
-        $url = "www.example.com/public_html/index.php";
-        echo substr($url, strrpos($url, '/')+1) . "\n";
+        $str = "000Hola qué tal";
+        $char;
+        $counter = 0;
+        
+        if (substr($str, $counter, 1) == "0" ) {
+            do {
+                $char = substr($str, $counter, 1);
+                $counter++;
+            } while ($char == "0");
+            $char =substr($str, $counter - 1);
+        } else {
+            $char = substr($str, $counter);
+        }
+
+        echo $char;
+
+        
          ?>
     </div>
 
@@ -33,7 +47,7 @@
         <h3>Código fuente:</h3>
         
     </div>
-    <img src="04.png" alt="">
+    <img src="15.png" alt="">
     <li><a class="button goback" href="index.php">Volver a los ejercicios</a></li>
 
  

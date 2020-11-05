@@ -18,14 +18,16 @@
     <div class="main">
         <div>
 
-            <p>10. Escribe un script PHP que separe una cadena y 
-                su resultado sea un array:</p>
+            <p> 10. Escribe un script PHP que separe una cadena y su resultado sea un array.
+                <br>Cadena de ejemplos : "Uno, dos, tres, cuatro";
+                <br>Resultado esperado : ["Uno", "dos", "tres", "cuatro"]
+            </p>
 
         </div>
         <div>
             <?php
-        $str = "Hola María qué tal? Perdona por entregarte la tarea tarde";
-        $arr = explode(' ', $str);
+        $str = "Uno, dos, tres, cuatro";
+        $arr = explode(', ', $str);
         echo '<pre>'. var_dump($arr) . '</pre>';
 
          ?>

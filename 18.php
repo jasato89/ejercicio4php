@@ -12,20 +12,19 @@
 
 
 <h1>Soluciones de los ejercicios</h1>
-<h2>Ejercicio 4</h2>
+<h2>Ejercicio 18</h2>
 
 <div class="main">
     <div>
-        <p>
-        // 4. Escribe un script PHP para extraer el nombre del fichero de la siguiente url:
-// cadena : 'www.example.com/public_html/index.php'
-// Valor esperado(fichero) : 'index.php'
-        </p>
+    <p>18. Escribe un script PHP que devuelva los 
+        caracteres después del último "/" de una URL:</p>
+
+        
     </div>
     <div>
         <?php
         $url = "www.example.com/public_html/index.php";
-        echo substr($url, strrpos($url, '/')+1) . "\n";
+        echo substr(strrchr($url, "/"), 1);
          ?>
     </div>
 
@@ -33,7 +32,7 @@
         <h3>Código fuente:</h3>
         
     </div>
-    <img src="04.png" alt="">
+    <img src="18.png" alt="">
     <li><a class="button goback" href="index.php">Volver a los ejercicios</a></li>
 
  

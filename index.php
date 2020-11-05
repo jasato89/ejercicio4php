@@ -13,22 +13,48 @@
 
     <div class="main">
         <ul>
-            <li>Escribe un programa que muestre tu nombre por pantalla, nombre del ciclo formativo que estás
-                realizando y curso.</li>
+
+        
+            <li>Ejercicio 1</li>
             <li><a class="button" href="01.php">Solución</a></li>
-            <li>Modifica el programa anterior para que muestre tu dirección, nombre de las asignaturas
-                del ciclo.El texto debe aparecer en una línea diferente.</li>
+            <li>Ejercicio 2</li>
             <li><a class="button" href="02.php">Solución</a></li>
-            <li>Escribe un programa que muestre tu horario de clase mediante una tabla, el recreo debe de aparecer.
-                Dale formato y estilos a la tabla.</li>
+            <li>Ejercicio 3</li>
             <li><a class="button" href="03.php">Solución</a></li>
-            <li>Crea la variable $nombre y asígnale tu nombre completo, crea la variable ciclo y asiga el
-                nombre del ciclo. Muestralo por pantalla como el ejercicio 1.</li>
+            <li>Ejercicio 4</li>
             <li><a class="button" href="04.php">Solución</a></li>
-            <li>Crea un conversor de moneda, de dólares a libras Australianos. Haz uso de variables.</li>
+            <li>Ejercicio 5</li>
             <li><a class="button" href="05.php">Solución</a></li>
-            <li>Pinta una pirámide invertida y hueca con asteriscos.</li>
+            <li>Ejercicio 6</li>
             <li><a class="button" href="06.php">Solución</a></li>
+            <li>Ejercicio 7</li>
+            <li><a class="button" href="07.php">Solución</a></li>
+            <li>Ejercicio 8</li>
+            <li><a class="button" href="08.php">Solución</a></li>
+            <li>Ejercicio 9</li>
+            <li><a class="button" href="09.php">Solución</a></li>
+            <li>Ejercicio 10</li>
+            <li><a class="button" href="10.php">Solución</a></li>
+            <li>Ejercicio 11</li>
+            <li><a class="button" href="11.php">Solución</a></li>
+            <li>Ejercicio 12</li>
+            <li><a class="button" href="12.php">Solución</a></li>
+            <li>Ejercicio 13</li>
+            <li><a class="button" href="13.php">Solución</a></li>
+            <li>Ejercicio 14</li>
+            <li><a class="button" href="14.php">Solución</a></li>
+            <li>Ejercicio 15</li>
+            <li><a class="button" href="15.php">Solución</a></li>
+            <li>Ejercicio 16</li>
+            <li><a class="button" href="16.php">Solución</a></li>
+            <li>Ejercicio 17</li>
+            <li><a class="button" href="17.php">Solución</a></li>
+            <li>Ejercicio 18</li>
+            <li><a class="button" href="18.php">Solución</a></li>
+            <li>Ejercicio 19</li>
+            <li><a class="button" href="19.php">Solución</a></li>
+            <li>Ejercicio 20</li>
+            <li><a class="button" href="20.php">Solución</a></li>
 
         </ul>
     </div>

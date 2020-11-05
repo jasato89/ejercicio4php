@@ -16,16 +16,22 @@
 
 <div class="main">
     <div>
-        <p>
-        // 4. Escribe un script PHP para extraer el nombre del fichero de la siguiente url:
-// cadena : 'www.example.com/public_html/index.php'
-// Valor esperado(fichero) : 'index.php'
-        </p>
+    <p>19. Escribe un script PHP que seleccione las primera
+         cinco palabras:
+        <br>Cadena de ejemplo : 'En un lugar de la de cuyo nombre'</p>
     </div>
     <div>
         <?php
-        $url = "www.example.com/public_html/index.php";
-        echo substr($url, strrpos($url, '/')+1) . "\n";
+        $str = 'En un lugar de la de cuyo nombre';
+        $newStr = "";
+
+        $arr = explode(" ", $str);
+
+        for ($i=0; $i < 5; $i++) { 
+            $newStr = $newStr . $arr[$i] . " ";
+        }
+        echo $newStr;
+
          ?>
     </div>
 

@@ -21,7 +21,7 @@
     </div>
     <div>
         <?php
-        $str = 'Buscando el carácter zeta';
+        $str = 'abcdefghijklmnñopqrstuvwxyza';
         $char = 'z';
         $charPos = strpos($str, $char);
         $nextChar = substr($str, $charPos + 1, 1);

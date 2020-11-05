@@ -12,7 +12,7 @@
 
 
 <h1>Soluciones de los ejercicios</h1>
-<h2>Ejercicio 4</h2>
+<h2>Ejercicio 13</h2>
 
 <div class="main">
     <div>
@@ -21,9 +21,9 @@
     </div>
     <div>
         <?php
-            $str = "Hola, qué tal?";
-            $str2 = "Maria";
-            $pos = 4;
+            $str = "En un lugar de la mancha de cuyo nombre";
+            $str2 = "test ";
+            $pos = strpos($str, "mancha");
             $finalStr = substr($str, 0, $pos) . $str2 . substr($str, $pos);    
             echo $finalStr;
          ?>
