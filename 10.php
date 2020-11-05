@@ -8,38 +8,40 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
 
 
-<h1>Soluciones de los ejercicios</h1>
-<h2>Ejercicio 4</h2>
+    <h1>Soluciones de los ejercicios</h1>
+    <h2>Ejercicio 10</h2>
 
-<div class="main">
-    <div>
-        <p>
-        // 4. Escribe un script PHP para extraer el nombre del fichero de la siguiente url:
-// cadena : 'www.example.com/public_html/index.php'
-// Valor esperado(fichero) : 'index.php'
-        </p>
-    </div>
-    <div>
-        <?php
-        $url = "www.example.com/public_html/index.php";
-        echo substr($url, strrpos($url, '/')+1) . "\n";
+    <div class="main">
+        <div>
+
+            <p>10. Escribe un script PHP que separe una cadena y 
+                su resultado sea un array:</p>
+
+        </div>
+        <div>
+            <?php
+        $str = "Hola María qué tal? Perdona por entregarte la tarea tarde";
+        $arr = explode(' ', $str);
+        echo '<pre>'. var_dump($arr) . '</pre>';
+
          ?>
+        </div>
+
+        <div class="innerDiv">
+            <h3>Código fuente:</h3>
+
+        </div>
+        <img src="10.png" alt="">
+        <li><a class="button goback" href="index.php">Volver a los ejercicios</a></li>
+
+
+
+
     </div>
-
-    <div class="innerDiv">
-        <h3>Código fuente:</h3>
-        
-    </div>
-    <img src="04.png" alt="">
-    <li><a class="button goback" href="index.php">Volver a los ejercicios</a></li>
-
- 
-    
-
-</div>
 
 
 </body>

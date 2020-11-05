@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 4</title>
+    <title>Ejercicio 8</title>
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -12,20 +12,20 @@
 
 
 <h1>Soluciones de los ejercicios</h1>
-<h2>Ejercicio 4</h2>
+<h2>Ejercicio 9</h2>
 
 <div class="main">
     <div>
         <p>
-        // 4. Escribe un script PHP para extraer el nombre del fichero de la siguiente url:
-// cadena : 'www.example.com/public_html/index.php'
-// Valor esperado(fichero) : 'index.php'
+        // 8. Escribe un script PHP que remplace la palabra "lugar" por "planeta"
+// Cadena de ejemplo : 'En un lugar de la mancha de cuyo nombre.'
+// Resultado esperado : En un planeta de la mancha de cuyo nombre..
         </p>
     </div>
     <div>
         <?php
-        $url = "www.example.com/public_html/index.php";
-        echo substr($url, strrpos($url, '/')+1) . "\n";
+        $cadena = "En un lugar de la mancha de cuyo nombre.";
+        echo str_replace("lugar", "planeta", $cadena);
          ?>
     </div>
 
@@ -33,7 +33,7 @@
         <h3>Código fuente:</h3>
         
     </div>
-    <img src="04.png" alt="">
+    <img src="08.png" alt="">
     <li><a class="button goback" href="index.php">Volver a los ejercicios</a></li>
 
  

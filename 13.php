@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 4</title>
+    <title>Ejercicio 13</title>
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -16,16 +16,16 @@
 
 <div class="main">
     <div>
-        <p>
-        // 4. Escribe un script PHP para extraer el nombre del fichero de la siguiente url:
-// cadena : 'www.example.com/public_html/index.php'
-// Valor esperado(fichero) : 'index.php'
-        </p>
+    <p>13. Escribe un script PHP que inserte en una especificada 
+        posición una cadena dada:</p>
     </div>
     <div>
         <?php
-        $url = "www.example.com/public_html/index.php";
-        echo substr($url, strrpos($url, '/')+1) . "\n";
+            $str = "Hola, qué tal?";
+            $str2 = "Maria";
+            $pos = 4;
+            $finalStr = substr($str, 0, $pos) . $str2 . substr($str, $pos);    
+            echo $finalStr;
          ?>
     </div>
 
@@ -33,7 +33,7 @@
         <h3>Código fuente:</h3>
         
     </div>
-    <img src="04.png" alt="">
+    <img src="13.png" alt="">
     <li><a class="button goback" href="index.php">Volver a los ejercicios</a></li>
 
  

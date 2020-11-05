@@ -8,38 +8,54 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
 
 
-<h1>Soluciones de los ejercicios</h1>
-<h2>Ejercicio 4</h2>
+    <h1>Soluciones de los ejercicios</h1>
+    <h2>Ejercicio 4</h2>
 
-<div class="main">
-    <div>
-        <p>
-        // 4. Escribe un script PHP para extraer el nombre del fichero de la siguiente url:
-// cadena : 'www.example.com/public_html/index.php'
-// Valor esperado(fichero) : 'index.php'
-        </p>
-    </div>
-    <div>
-        <?php
-        $url = "www.example.com/public_html/index.php";
-        echo substr($url, strrpos($url, '/')+1) . "\n";
+    <div class="main">
+        <div>
+            <p>
+                9. Escribe un script PHP que encuentre el primer caracter diferente comparando dos cadenas.
+                <br> cadena1 : 'football'
+                <br> cadena2 : 'footboll'
+                <br> Resultado esperado : La primera diferencia entre las dos cadenas está en la posición 5: "a" <> "o"
+
+            </p>
+        </div>
+        <div>
+            <?php
+        $str1 = "football";
+        $str2 = "footboll";
+        $char1;
+        $char2;
+        $counter = 0;
+
+        do {
+            $char1 = substr($str1, $counter, 1);
+            $char2 = substr($str2, $counter, 1);
+            $counter++;
+            
+        } while ($char1 == $char2);
+
+        echo 'La primera diferencia entre las dos cadenas está en la posición ' . $counter . ': '. $char1.' <> ' . $char2;
+
          ?>
+        </div>
+
+        <div class="innerDiv">
+            <h3>Código fuente:</h3>
+
+        </div>
+        <img src="09.png" alt="">
+        <li><a class="button goback" href="index.php">Volver a los ejercicios</a></li>
+
+
+
+
     </div>
-
-    <div class="innerDiv">
-        <h3>Código fuente:</h3>
-        
-    </div>
-    <img src="04.png" alt="">
-    <li><a class="button goback" href="index.php">Volver a los ejercicios</a></li>
-
- 
-    
-
-</div>
 
 
 </body>

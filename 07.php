@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 4</title>
+    <title>Ejercicio 7</title>
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -12,20 +12,21 @@
 
 
 <h1>Soluciones de los ejercicios</h1>
-<h2>Ejercicio 4</h2>
+<h2>Ejercicio 7</h2>
 
 <div class="main">
     <div>
         <p>
-        // 4. Escribe un script PHP para extraer el nombre del fichero de la siguiente url:
-// cadena : 'www.example.com/public_html/index.php'
-// Valor esperado(fichero) : 'index.php'
+    7. Escribe un script PHP que genere una contraseña aleatoria desde la siguiente cadena (no usar la
+función random):
+Cadena de ejemplo : '1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcefghijklmnopqrstuvwxyz'
+ Nota : La longitud de la contraseña puede ser de 6, 7, 8 etc.
         </p>
     </div>
     <div>
         <?php
-        $url = "www.example.com/public_html/index.php";
-        echo substr($url, strrpos($url, '/')+1) . "\n";
+        $cadena = "1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcefghijklmnopqrstuvwxyz";
+        echo substr(str_shuffle($cadena), 0, 1).substr(md5(time()),1);
          ?>
     </div>
 
@@ -33,7 +34,7 @@
         <h3>Código fuente:</h3>
         
     </div>
-    <img src="04.png" alt="">
+    <img src="07.png" alt="">
     <li><a class="button goback" href="index.php">Volver a los ejercicios</a></li>
 
  

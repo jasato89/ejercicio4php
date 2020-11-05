@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 4</title>
+    <title>Ejercicio 12</title>
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -16,16 +16,16 @@
 
 <div class="main">
     <div>
-        <p>
-        // 4. Escribe un script PHP para extraer el nombre del fichero de la siguiente url:
-// cadena : 'www.example.com/public_html/index.php'
-// Valor esperado(fichero) : 'index.php'
-        </p>
+    <p>12. Escribe un script PHP que imprima el siguiente 
+        caracter de un caracter dado:</p>
     </div>
     <div>
         <?php
-        $url = "www.example.com/public_html/index.php";
-        echo substr($url, strrpos($url, '/')+1) . "\n";
+        $str = 'Buscando el carácter zeta';
+        $char = 'z';
+        $charPos = strpos($str, $char);
+        $nextChar = substr($str, $charPos + 1, 1);
+        echo $nextChar;
          ?>
     </div>
 
@@ -33,7 +33,7 @@
         <h3>Código fuente:</h3>
         
     </div>
-    <img src="04.png" alt="">
+    <img src="12.png" alt="">
     <li><a class="button goback" href="index.php">Volver a los ejercicios</a></li>
 
  

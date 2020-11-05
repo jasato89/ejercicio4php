@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 4</title>
+    <title>Ejercicio 11</title>
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -12,20 +12,21 @@
 
 
 <h1>Soluciones de los ejercicios</h1>
-<h2>Ejercicio 4</h2>
+<h2>Ejercicio 11</h2>
 
 <div class="main">
     <div>
-        <p>
-        // 4. Escribe un script PHP para extraer el nombre del fichero de la siguiente url:
-// cadena : 'www.example.com/public_html/index.php'
-// Valor esperado(fichero) : 'index.php'
-        </p>
+    <p>11. Escribe un script PHP que obtenga de una URL 
+        el nombre del fichero sin extensión:</p>
+    
     </div>
     <div>
         <?php
-        $url = "www.example.com/public_html/index.php";
-        echo substr($url, strrpos($url, '/')+1) . "\n";
+        $url = "www.example.com/public_html/index.php?name=whatever";
+        $str = basename(parse_url($url, PHP_URL_PATH));
+        $arr = explode(".", $str, 2);
+        $str = $arr[0];
+        echo $str;
          ?>
     </div>
 
@@ -33,7 +34,7 @@
         <h3>Código fuente:</h3>
         
     </div>
-    <img src="04.png" alt="">
+    <img src="11.png" alt="">
     <li><a class="button goback" href="index.php">Volver a los ejercicios</a></li>
 
  
